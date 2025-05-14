@@ -1,0 +1,147 @@
+@import "./blocks/_header.scss";
+@import "./blocks/_footer.scss";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+$primary-color: #F53855;
+$text-color: #0B132A;
+$secondary-text: #4F5665;
+$light-gray: #F8F8F8;
+
+%sectextstyle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187%;
+  color: #4f5665;
+}
+
+%h2textstyle {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 143%;
+  color: #0b132a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.banner {
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content_banner {
+  max-width: 550px;
+}
+
+.title_banner {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 90px;
+  line-height: 1.2;
+}
+
+
+.title_banner span{
+  font-weight: bold;
+}
+
+.text_banner {
+  color: #4F5665;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.image_banner{
+  margin-top: 101px;
+}
+
+.button_banner {
+  padding: 15px 60px;
+  background-color: $primary-color;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 20px 40px rgba(245, 56, 56, 0.3);
+}
+
+.statistic {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 80px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  margin-top: 100px;
+}
+
+
+.number {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.stat {
+  color: #4F5665;
+  font-size: 20px;
+}
+
+.functions {
+  @include section-padding;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .functions_image {
+      width: 50%;
+      height: 500px;
+      margin-top: 94px;
+  }
+
+  .content_functions {
+      width: 45%;
+  }
+
+  .title_functions {
+      font-size: 35px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 1.4;
+      color: $text-color;
+  }
+
+  .text_functions {
+      color: $secondary-text;
+      margin-bottom: 30px;
+      font-size: 16px;
+      line-height: 1.8;
+  }
+
+  .list_functions {
+      list-style: none;
+      
+  }
+
+  .item_functions {
+      @include flex-center;
+      margin-bottom: 15px;
+      font-size: 14px;
+      color: $secondary-text;
+
+  }
+}
